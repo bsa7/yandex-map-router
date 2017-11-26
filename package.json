@@ -22,7 +22,7 @@
     "build": "node ./node_modules/.bin/webpack -p --progress --config ./config/webpack.production.es6",
     "compile": "webpack -p --config ./config/webpack.production.es6 --progress --display-error-details --display-cached",
     "build-css": "node-sass --include-path scss --output-style compressed ./client/assets/stylesheets/index.scss client/assets/stylesheets/index.css",
-    "start": "echo $(date) && npm cache clean && node server/index.es6",
+    "start": "echo $(date) && babel-node server/index.es6",
     "start-webpack": "webpack-dev-server -d --config config/webpack.development.es6 --progress --colors --hot --inline",
     "postinstall": "npm run build-css && npm run build",
     "production": "echo 'NODE_ENV=production pm2 start server/index.es6 --name test20170906 --node-args=\"--max-old-space-size=2048 --nouse-idle-notification\"'"
