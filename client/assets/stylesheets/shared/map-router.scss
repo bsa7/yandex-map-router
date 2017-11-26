@@ -1,0 +1,67 @@
+.map-router {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &--header {
+    padding: 10px 40px;
+  }
+
+  &--body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    &--map-area {
+      min-width: 500px;
+    }
+
+    &--navigation-panel {
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+
+      &--drag-handler {
+        width: 32px;
+        height: 32px;
+        margin: 8px;
+        background-color: lightgray;
+        cursor: move;
+      }
+
+      &--route-point {
+        cursor: pointer;
+        padding: 16px;
+        margin-right: 24px;
+      }
+
+      &--route-point__highlighted {
+        color: crimson;
+      }
+
+      &--remove {
+        width: 24px;
+        height: 24px;
+        padding: 4px 2px;
+        font-size: 16px;
+        color: black;
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      &--remove:hover {
+        color: crimson;
+        background-color: lightgray;
+      }
+    }
+  }
+}

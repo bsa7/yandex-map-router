@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# before using you must install npm and next modules:
+# sudo npm install -g svg2ttf
+# sudo npm install -g ttf2eot
+# sudo npm install -g ttf2woff
+
+echo -e "convering \e[0;32m$1.svg to $1.ttf...\e[0m"
+svg2ttf $1.svg $1.ttf
+echo -e "convering \e[0;32m$1.ttf to $1.eot...\e[0m"
+ttf2eot $1.ttf $1.eot
+echo -e "convering \e[0;32m$1.ttf to $1.woff...\e[0m"
+ttf2woff $1.ttf $1.woff

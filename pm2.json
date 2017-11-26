@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "name": "TvBitcoin",
+            "exec_interpreter": "babel-node",
+            "script": "server/index.es6",
+            "merge_logs": true,
+            "cwd": "./public",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+capybara-*.html
+/log
+/tmp
+/public/system
+.vscode/
+.editorconfig
+.eslintignore
+.eslintrc.json
+.flowconfig
+.jscsrc
+tests/selenium/capybara.yml
+tests/selenium/reports/**
+tmp/
+# npm modules
+node_modules/
+
+build/Release
+build
+dist
+
+config/static/
+npm-debug.log

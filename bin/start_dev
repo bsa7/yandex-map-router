@@ -1,0 +1,4 @@
+#!/bin/bash
+pm2 delete test20171125
+NODE_ENV=development pm2 start --interpreter babel-node server/index.es6 --name test20171125
+
