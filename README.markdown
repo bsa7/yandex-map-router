@@ -29,6 +29,8 @@ bin/start_dev
 
 [Деплой на Heroku](https://yandex-map-router.herokuapp.com/)
 
+![Демо gif](guide/demo.gif)]
+
 ## Тестирование
 
 Запуск Selenium тестов
